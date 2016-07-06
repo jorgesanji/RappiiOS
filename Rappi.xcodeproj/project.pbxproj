@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C3EFFB5737A80B167D49657B /* Pods_RappiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 730CEB7E088F77F4178B4312 /* Pods_RappiTests.framework */; };
-		D85A33701D2BD7E8007D9CC8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D85A336E1D2BD7E8007D9CC8 /* Main.storyboard */; };
 		D85A33721D2BD7E8007D9CC8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D85A33711D2BD7E8007D9CC8 /* Assets.xcassets */; };
 		D85A33751D2BD7E8007D9CC8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D85A33731D2BD7E8007D9CC8 /* LaunchScreen.storyboard */; };
 		D85A33801D2BD7E9007D9CC8 /* RappiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85A337F1D2BD7E9007D9CC8 /* RappiTests.swift */; };
@@ -20,10 +18,20 @@
 		D85A33B81D2C1A44007D9CC8 /* RestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85A33B71D2C1A44007D9CC8 /* RestManager.swift */; };
 		D85A33BA1D2C1C9D007D9CC8 /* Application+RestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85A33B91D2C1C9D007D9CC8 /* Application+RestManager.swift */; };
 		D85A33BC1D2C1E88007D9CC8 /* AppDelegate+CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85A33BB1D2C1E88007D9CC8 /* AppDelegate+CoreData.swift */; };
-		D8BBBA5E1D2C65DA00D88D13 /* config.json in Resources */ = {isa = PBXBuildFile; fileRef = D8BBBA5D1D2C65DA00D88D13 /* config.json */; };
-		D8BBBA641D2C7FEB00D88D13 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8BBBA631D2C7FEB00D88D13 /* ViewController.swift */; };
-		D8BBBA661D2C809E00D88D13 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8BBBA651D2C809E00D88D13 /* AppConfig.swift */; };
+		D8B622831D2D5C2700302BAC /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B622821D2D5C2700302BAC /* HomeViewController.swift */; };
+		D8B622891D2D5E8400302BAC /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B622881D2D5E8400302BAC /* AppConfig.swift */; };
+		D8B6228C1D2D5ECB00302BAC /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B6228B1D2D5ECB00302BAC /* BaseView.swift */; };
+		D8B6228E1D2D5FD100302BAC /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B6228D1D2D5FD100302BAC /* HomeView.swift */; };
+		D8B622911D2D61AD00302BAC /* RappiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B622901D2D61AD00302BAC /* RappiView.swift */; };
+		D8B622931D2D70D600302BAC /* CollectionDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B622921D2D70D600302BAC /* CollectionDataSource.swift */; };
+		D8B622961D2D71DD00302BAC /* AppDimentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B622951D2D71DD00302BAC /* AppDimentions.swift */; };
+		D8B622981D2D71F500302BAC /* AppStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B622971D2D71F500302BAC /* AppStyles.swift */; };
+		D8B6229B1D2D72F600302BAC /* Color+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B6229A1D2D72F600302BAC /* Color+Hex.swift */; };
+		D8B6229E1D2D7CDB00302BAC /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B6229D1D2D7CDB00302BAC /* SplashViewController.swift */; };
+		D8B622A11D2D7EF800302BAC /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B622A01D2D7EF800302BAC /* SplashView.swift */; };
+		D8BBBA5E1D2C65DA00D88D13 /* AppConfig.json in Resources */ = {isa = PBXBuildFile; fileRef = D8BBBA5D1D2C65DA00D88D13 /* AppConfig.json */; };
 		D8BBBA681D2C810100D88D13 /* RappiConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8BBBA671D2C810100D88D13 /* RappiConfig.swift */; };
+		E37B7F064085A14FAD5D7781 /* Pods_Rappi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC57AF7436AFF1547E3FD2B5 /* Pods_Rappi.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,11 +52,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1DC7DCAAF86B1B5210E0B771 /* Pods-RappiTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RappiTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RappiTests/Pods-RappiTests.release.xcconfig"; sourceTree = "<group>"; };
-		730CEB7E088F77F4178B4312 /* Pods_RappiTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RappiTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D0EC8912E2098D5541C884B1 /* Pods-RappiTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RappiTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RappiTests/Pods-RappiTests.debug.xcconfig"; sourceTree = "<group>"; };
+		05507244113781D7AE5BBC9E /* Pods-Rappi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rappi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Rappi/Pods-Rappi.debug.xcconfig"; sourceTree = "<group>"; };
+		17352A2FDA33D1D03AA9D059 /* Pods-Rappi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rappi.release.xcconfig"; path = "Pods/Target Support Files/Pods-Rappi/Pods-Rappi.release.xcconfig"; sourceTree = "<group>"; };
+		AC57AF7436AFF1547E3FD2B5 /* Pods_Rappi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Rappi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D85A33671D2BD7E8007D9CC8 /* Rappi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rappi.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D85A336F1D2BD7E8007D9CC8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D85A33711D2BD7E8007D9CC8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D85A33741D2BD7E8007D9CC8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D85A33761D2BD7E8007D9CC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -58,7 +65,6 @@
 		D85A33861D2BD7E9007D9CC8 /* RappiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RappiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D85A338A1D2BD7E9007D9CC8 /* RappiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RappiUITests.swift; sourceTree = "<group>"; };
 		D85A338C1D2BD7E9007D9CC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D85A33991D2C0255007D9CC8 /* Rappi_Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Rappi_Header.h; sourceTree = "<group>"; };
 		D85A33A01D2C03F4007D9CC8 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D85A33A31D2C09F9007D9CC8 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		D85A33A91D2C0EF0007D9CC8 /* ViewController+Device.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+Device.swift"; sourceTree = "<group>"; };
@@ -66,9 +72,18 @@
 		D85A33B71D2C1A44007D9CC8 /* RestManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestManager.swift; sourceTree = "<group>"; };
 		D85A33B91D2C1C9D007D9CC8 /* Application+RestManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Application+RestManager.swift"; sourceTree = "<group>"; };
 		D85A33BB1D2C1E88007D9CC8 /* AppDelegate+CoreData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AppDelegate+CoreData.swift"; sourceTree = "<group>"; };
-		D8BBBA5D1D2C65DA00D88D13 /* config.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = config.json; sourceTree = "<group>"; };
-		D8BBBA631D2C7FEB00D88D13 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D8BBBA651D2C809E00D88D13 /* AppConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
+		D8B622821D2D5C2700302BAC /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		D8B622881D2D5E8400302BAC /* AppConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
+		D8B6228B1D2D5ECB00302BAC /* BaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		D8B6228D1D2D5FD100302BAC /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		D8B622901D2D61AD00302BAC /* RappiView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RappiView.swift; sourceTree = "<group>"; };
+		D8B622921D2D70D600302BAC /* CollectionDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionDataSource.swift; sourceTree = "<group>"; };
+		D8B622951D2D71DD00302BAC /* AppDimentions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDimentions.swift; sourceTree = "<group>"; };
+		D8B622971D2D71F500302BAC /* AppStyles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppStyles.swift; sourceTree = "<group>"; };
+		D8B6229A1D2D72F600302BAC /* Color+Hex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+Hex.swift"; sourceTree = "<group>"; };
+		D8B6229D1D2D7CDB00302BAC /* SplashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SplashViewController.swift; path = ../Home/SplashViewController.swift; sourceTree = "<group>"; };
+		D8B622A01D2D7EF800302BAC /* SplashView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		D8BBBA5D1D2C65DA00D88D13 /* AppConfig.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = AppConfig.json; sourceTree = "<group>"; };
 		D8BBBA671D2C810100D88D13 /* RappiConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RappiConfig.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -77,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E37B7F064085A14FAD5D7781 /* Pods_Rappi.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,7 +100,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3EFFB5737A80B167D49657B /* Pods_RappiTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,6 +113,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7AB77A39CC6C20502D55F368 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AC57AF7436AFF1547E3FD2B5 /* Pods_Rappi.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C18AF4B111FEFE28C39AAB35 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				05507244113781D7AE5BBC9E /* Pods-Rappi.debug.xcconfig */,
+				17352A2FDA33D1D03AA9D059 /* Pods-Rappi.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D85A335E1D2BD7E8007D9CC8 = {
 			isa = PBXGroup;
 			children = (
@@ -105,8 +137,8 @@
 				D85A337E1D2BD7E9007D9CC8 /* RappiTests */,
 				D85A33891D2BD7E9007D9CC8 /* RappiUITests */,
 				D85A33681D2BD7E8007D9CC8 /* Products */,
-				E431626AC936C0AE59E568D8 /* Pods */,
-				F57389A1D207D3B1C3A217FD /* Frameworks */,
+				C18AF4B111FEFE28C39AAB35 /* Pods */,
+				7AB77A39CC6C20502D55F368 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -124,15 +156,14 @@
 			isa = PBXGroup;
 			children = (
 				D8BBBA621D2C7F9F00D88D13 /* Core */,
-				D85A33991D2C0255007D9CC8 /* Rappi_Header.h */,
+				D8B622941D2D71B100302BAC /* Styles */,
+				D8B622851D2D5DE700302BAC /* View */,
 				D85A339F1D2C03A2007D9CC8 /* Utils */,
 				D85A339E1D2C037C007D9CC8 /* Application */,
 				D85A339D1D2C0315007D9CC8 /* Controller */,
-				D85A339C1D2C02F4007D9CC8 /* View */,
 				D85A339B1D2C02CD007D9CC8 /* Business */,
 				D85A339A1D2C02A3007D9CC8 /* DataAccess */,
 				D85A33981D2C0084007D9CC8 /* Resources */,
-				D85A336E1D2BD7E8007D9CC8 /* Main.storyboard */,
 				D85A33711D2BD7E8007D9CC8 /* Assets.xcassets */,
 				D85A33731D2BD7E8007D9CC8 /* LaunchScreen.storyboard */,
 				D85A33761D2BD7E8007D9CC8 /* Info.plist */,
@@ -184,18 +215,12 @@
 			path = Business;
 			sourceTree = "<group>";
 		};
-		D85A339C1D2C02F4007D9CC8 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		D85A339D1D2C0315007D9CC8 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				D8B6229C1D2D7C9800302BAC /* Splash */,
+				D8B622811D2D5BF400302BAC /* Home */,
 				D85A33A21D2C09D4007D9CC8 /* Base */,
-				D8BBBA631D2C7FEB00D88D13 /* ViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -215,6 +240,7 @@
 			isa = PBXGroup;
 			children = (
 				D85A33A81D2C0E8D007D9CC8 /* Extensions */,
+				D8B622921D2D70D600302BAC /* CollectionDataSource.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -289,10 +315,93 @@
 			path = Manager;
 			sourceTree = "<group>";
 		};
+		D8B622811D2D5BF400302BAC /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				D8B622821D2D5C2700302BAC /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		D8B622851D2D5DE700302BAC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D8B6229F1D2D7EDD00302BAC /* Splash */,
+				D8B6228F1D2D618500302BAC /* Base */,
+				D8B622861D2D5E1A00302BAC /* Home */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D8B622861D2D5E1A00302BAC /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				D8B6228D1D2D5FD100302BAC /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		D8B622871D2D5E5D00302BAC /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				D8B622881D2D5E8400302BAC /* AppConfig.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		D8B6228A1D2D5E8A00302BAC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D8B6228B1D2D5ECB00302BAC /* BaseView.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		D8B6228F1D2D618500302BAC /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				D8B622901D2D61AD00302BAC /* RappiView.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		D8B622941D2D71B100302BAC /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				D8B622951D2D71DD00302BAC /* AppDimentions.swift */,
+				D8B622971D2D71F500302BAC /* AppStyles.swift */,
+			);
+			path = Styles;
+			sourceTree = "<group>";
+		};
+		D8B622991D2D72C600302BAC /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				D8B6229A1D2D72F600302BAC /* Color+Hex.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		D8B6229C1D2D7C9800302BAC /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				D8B6229D1D2D7CDB00302BAC /* SplashViewController.swift */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		D8B6229F1D2D7EDD00302BAC /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				D8B622A01D2D7EF800302BAC /* SplashView.swift */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
 		D8BBBA5F1D2C65E100D88D13 /* Config */ = {
 			isa = PBXGroup;
 			children = (
-				D8BBBA5D1D2C65DA00D88D13 /* config.json */,
+				D8BBBA5D1D2C65DA00D88D13 /* AppConfig.json */,
 			);
 			path = Config;
 			sourceTree = "<group>";
@@ -300,26 +409,11 @@
 		D8BBBA621D2C7F9F00D88D13 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				D8BBBA651D2C809E00D88D13 /* AppConfig.swift */,
+				D8B622991D2D72C600302BAC /* Utils */,
+				D8B6228A1D2D5E8A00302BAC /* View */,
+				D8B622871D2D5E5D00302BAC /* Config */,
 			);
 			path = Core;
-			sourceTree = "<group>";
-		};
-		E431626AC936C0AE59E568D8 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				D0EC8912E2098D5541C884B1 /* Pods-RappiTests.debug.xcconfig */,
-				1DC7DCAAF86B1B5210E0B771 /* Pods-RappiTests.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		F57389A1D207D3B1C3A217FD /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				730CEB7E088F77F4178B4312 /* Pods_RappiTests.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -329,9 +423,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D85A338F1D2BD7E9007D9CC8 /* Build configuration list for PBXNativeTarget "Rappi" */;
 			buildPhases = (
+				BF2D9A68094EB411E87B4405 /* Check Pods Manifest.lock */,
 				D85A33631D2BD7E8007D9CC8 /* Sources */,
 				D85A33641D2BD7E8007D9CC8 /* Frameworks */,
 				D85A33651D2BD7E8007D9CC8 /* Resources */,
+				DFA86AC7917ABEBAE9953F7C /* Embed Pods Frameworks */,
+				6282BC3B26D72BAE834A4200 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -346,12 +443,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D85A33921D2BD7E9007D9CC8 /* Build configuration list for PBXNativeTarget "RappiTests" */;
 			buildPhases = (
-				E449914C79CFDC60EF32656B /* Check Pods Manifest.lock */,
 				D85A33771D2BD7E9007D9CC8 /* Sources */,
 				D85A33781D2BD7E9007D9CC8 /* Frameworks */,
 				D85A33791D2BD7E9007D9CC8 /* Resources */,
-				93C7F122A698875F69E77CCE /* Embed Pods Frameworks */,
-				9C62F2868761151CE947E55B /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -430,9 +524,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D85A33751D2BD7E8007D9CC8 /* LaunchScreen.storyboard in Resources */,
-				D8BBBA5E1D2C65DA00D88D13 /* config.json in Resources */,
+				D8BBBA5E1D2C65DA00D88D13 /* AppConfig.json in Resources */,
 				D85A33721D2BD7E8007D9CC8 /* Assets.xcassets in Resources */,
-				D85A33701D2BD7E8007D9CC8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -453,22 +546,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		93C7F122A698875F69E77CCE /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RappiTests/Pods-RappiTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9C62F2868761151CE947E55B /* Copy Pods Resources */ = {
+		6282BC3B26D72BAE834A4200 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -480,10 +558,10 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RappiTests/Pods-RappiTests-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Rappi/Pods-Rappi-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E449914C79CFDC60EF32656B /* Check Pods Manifest.lock */ = {
+		BF2D9A68094EB411E87B4405 /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -498,6 +576,21 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		DFA86AC7917ABEBAE9953F7C /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Rappi/Pods-Rappi-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -505,15 +598,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D8BBBA641D2C7FEB00D88D13 /* ViewController.swift in Sources */,
-				D8BBBA661D2C809E00D88D13 /* AppConfig.swift in Sources */,
+				D8B622831D2D5C2700302BAC /* HomeViewController.swift in Sources */,
+				D8B622891D2D5E8400302BAC /* AppConfig.swift in Sources */,
 				D8BBBA681D2C810100D88D13 /* RappiConfig.swift in Sources */,
+				D8B6229E1D2D7CDB00302BAC /* SplashViewController.swift in Sources */,
 				D85A33AA1D2C0EF0007D9CC8 /* ViewController+Device.swift in Sources */,
+				D8B622931D2D70D600302BAC /* CollectionDataSource.swift in Sources */,
 				D85A33BA1D2C1C9D007D9CC8 /* Application+RestManager.swift in Sources */,
 				D85A33A11D2C03F4007D9CC8 /* AppDelegate.swift in Sources */,
 				D85A33B81D2C1A44007D9CC8 /* RestManager.swift in Sources */,
 				D85A33A41D2C09F9007D9CC8 /* BaseViewController.swift in Sources */,
 				D85A33AC1D2C1700007D9CC8 /* UIView+Style.swift in Sources */,
+				D8B622961D2D71DD00302BAC /* AppDimentions.swift in Sources */,
+				D8B6228E1D2D5FD100302BAC /* HomeView.swift in Sources */,
+				D8B622A11D2D7EF800302BAC /* SplashView.swift in Sources */,
+				D8B622911D2D61AD00302BAC /* RappiView.swift in Sources */,
+				D8B622981D2D71F500302BAC /* AppStyles.swift in Sources */,
+				D8B6228C1D2D5ECB00302BAC /* BaseView.swift in Sources */,
+				D8B6229B1D2D72F600302BAC /* Color+Hex.swift in Sources */,
 				D85A33BC1D2C1E88007D9CC8 /* AppDelegate+CoreData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -550,14 +652,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		D85A336E1D2BD7E8007D9CC8 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D85A336F1D2BD7E8007D9CC8 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		D85A33731D2BD7E8007D9CC8 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -609,6 +703,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -647,6 +742,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -654,6 +750,7 @@
 		};
 		D85A33901D2BD7E9007D9CC8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05507244113781D7AE5BBC9E /* Pods-Rappi.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Rappi/Info.plist;
@@ -661,13 +758,14 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gravility.Rappi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = Rappi/Rappi_Header.h;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		D85A33911D2BD7E9007D9CC8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17352A2FDA33D1D03AA9D059 /* Pods-Rappi.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Rappi/Info.plist;
@@ -675,14 +773,13 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gravility.Rappi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = Rappi/Rappi_Header.h;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
 		D85A33931D2BD7E9007D9CC8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D0EC8912E2098D5541C884B1 /* Pods-RappiTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = RappiTests/Info.plist;
@@ -695,7 +792,6 @@
 		};
 		D85A33941D2BD7E9007D9CC8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1DC7DCAAF86B1B5210E0B771 /* Pods-RappiTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = RappiTests/Info.plist;
@@ -713,7 +809,9 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gravility.RappiUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				TEST_TARGET_NAME = Rappi;
+				USER_HEADER_SEARCH_PATHS = "";
 				USES_XCTRUNNER = YES;
 			};
 			name = Debug;
@@ -725,7 +823,9 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gravility.RappiUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				TEST_TARGET_NAME = Rappi;
+				USER_HEADER_SEARCH_PATHS = "";
 				USES_XCTRUNNER = YES;
 			};
 			name = Release;

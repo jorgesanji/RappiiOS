@@ -12,10 +12,31 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var navigationController:UINavigationController?
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        RappiConfig.initialize()
+        
+        // Init Rest
+        initRestService()
+        
+        // Init DataBase
+        initDatabase()
+        
+        // Init RootController
+        let viewController = SplashViewController()
+        self.navigationController = UINavigationController()
+        self.navigationController!.pushViewController(viewController, animated: false)
+        self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        self.window!.rootViewController = navigationController
+        self.window!.backgroundColor = UIColor.whiteColor()
+        self.window?.makeKeyAndVisible()
+        
+        // Add style to navigation bar
+        AppStyles.applyGlobalStyle()
+        
         return true
     }
 

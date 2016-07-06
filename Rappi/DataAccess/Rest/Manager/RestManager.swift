@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import AFNetworking
 
 typealias TypeResponse = (result:AnyObject) -> Void
 typealias ErrorResponse = (error:NSError) -> Void
@@ -21,43 +22,20 @@ class RestManager{
     /// Singleton instance
     private static let sharedInstance = RestManager()
     /// Request manager
-    private var manager : AFHTTPRequestOperationManager?
+    private var manager : AFHTTPSessionManager?
     
     // MARK:- Initializing methods
     
     /// Initializing request manager with authorization header and base url
     ///
     
-    static func initWithBaseUrl(url:NSString){
-        let manager = AFHTTPRequestOperationManager(baseURL: NSURL(string: url as String))
+    static func initWithBaseUrl(url:String){
+        let manager = AFHTTPSessionManager(baseURL: NSURL(string: url))
         manager.responseSerializer = AFJSONResponseSerializer()
         RestManager.sharedInstance.manager = manager
     }
     
-    /// Initializing request manager with authorization header and base url
-    ///
-    /// :param: user id user
-    /// :param: password password user
-    
-    static func initWithBaseUrl(url:NSString, user:NSString, password:NSString){
-        let manager = AFHTTPRequestOperationManager(baseURL: NSURL(string: url as String))
-        manager.requestSerializer.setAuthorizationHeaderFieldWithUsername(user as String, password:password as String)
-        manager.responseSerializer = AFJSONResponseSerializer()
-        RestManager.sharedInstance.manager = manager
-    }
-    
-    /// Initializing request manager with authorization header but withouth base url
-    ///
-    /// :param: user id user
-    /// :param: password password user
-    
-    static func initWithAuthorizationCredentials(user:NSString, password:NSString){
-        let manager = AFHTTPRequestOperationManager.new()
-        manager.requestSerializer.setAuthorizationHeaderFieldWithUsername(user as String, password:password as String)
-        manager.responseSerializer = AFJSONResponseSerializer()
-        RestManager.sharedInstance.manager = manager
-    }
-    
+
     // MARK:- Public
     
     /// Request using GET METHOD.
@@ -67,8 +45,8 @@ class RestManager{
     /// :param: success callback success
     /// :param: failure callback failure
     
-    static func GET(endpoint:NSString, parameters:AnyObject?=nil, success:TypeResponse, failure:ErrorResponse ){
-        RestManager.sharedInstance.requestWithUrl(endpoint, parameters: validateParams(parameters: parameters), method: RequestMethod.GET, success: success, failure: failure)
+    static func GET(endpoint:String, parameters:AnyObject?=nil, success:TypeResponse, failure:ErrorResponse ){
+        RestManager.sharedInstance.requestWithUrl(endpoint, parameters: validateParams(parameters), method: RequestMethod.GET, success: success, failure: failure)
     }
     
     /// Request using POST METHOD.
@@ -78,8 +56,8 @@ class RestManager{
     /// :param: success callback success
     /// :param: failure callback failure
     
-    static func POST(endpoint:NSString, parameters:AnyObject?=nil, success:TypeResponse, failure:ErrorResponse ){
-        RestManager.sharedInstance.requestWithUrl(endpoint, parameters:validateParams(parameters: parameters), method: RequestMethod.POST, success: success, failure: failure)
+    static func POST(endpoint:String, parameters:AnyObject?=nil, success:TypeResponse, failure:ErrorResponse ){
+        RestManager.sharedInstance.requestWithUrl(endpoint, parameters:validateParams(parameters), method: RequestMethod.POST, success: success, failure: failure)
     }
     
     // MARK:- Private
@@ -92,21 +70,28 @@ class RestManager{
     /// :param: success callback success
     /// :param: failure callback failure
     
-    private func requestWithUrl(endpoint:NSString, parameters:AnyObject?=nil, method:RequestMethod, success:TypeResponse, failure:ErrorResponse ){
+    private func requestWithUrl(endpoint:String, parameters:AnyObject?=nil, method:RequestMethod, success:TypeResponse, failure:ErrorResponse ){
         
         if(method == RequestMethod.POST){
-            self.manager?.POST(endpoint as String, parameters: parameters!, success: { (opration:AFHTTPRequestOperation,responseObject:AnyObject) -> Void in
-                success(result: responseObject)
-                }, failure: { (operation:AFHTTPRequestOperation ,error:NSError ) -> Void in
+            self.manager?.POST(endpoint, parameters: parameters, progress: { (NSProgress) -> Void in
+            
+                }, success: { (task:NSURLSessionDataTask, responseObject:AnyObject?) -> Void in
+                    success(result: responseObject!)
+                }, failure: { (task:NSURLSessionDataTask?, error:NSError) -> Void in
                     failure(error: error)
             })
+        
+        
         }else{
-            self.manager?.GET(endpoint as String, parameters: parameters, success: { (opration:AFHTTPRequestOperation,responseObject:AnyObject) -> Void in
-                success(result: responseObject)
-                }, failure: { (operation:AFHTTPRequestOperation ,error:NSError ) -> Void in
+            self.manager?.GET(endpoint, parameters: parameters, progress: { (NSProgress) -> Void in
+                
+                }, success: { (task:NSURLSessionDataTask, responseObject:AnyObject?) -> Void in
+                     success(result: responseObject!)
+                }, failure: { (task:NSURLSessionDataTask?, error:NSError) -> Void in
                     failure(error: error)
             })
         }
+
     }
     
     static private func validateParams(parameters:AnyObject!=nil) -> NSDictionary{

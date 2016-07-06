@@ -7,11 +7,13 @@
 //
 
 import Foundation
+import MagicalRecord
 
+let DATABASE_NAME = "RappiDataBase"
 
 extension AppDelegate{
     
-    func initMagicalRecord(){
-        //MagicalRecord.setupCoreDataStack()
+    func initDatabase(){
+        MagicalRecord.setupCoreDataStackWithStoreNamed(DATABASE_NAME);
     }
 }

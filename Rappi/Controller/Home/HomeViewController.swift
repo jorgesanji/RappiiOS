@@ -8,11 +8,24 @@
 
 import UIKit
 
-class ViewController: BaseViewController {
+class HomeViewController: BaseViewController {
+    
+    /// override root view
+    var Oview: HomeView! { return self.view as! HomeView }
+    
+    // MARK:- Properties
+    
+    
+    // MARK:- UIViewController
+    
+    override func loadView() {
+        self.view = HomeView()
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        Oview.showIndicator = true
     }
 
     override func didReceiveMemoryWarning() {

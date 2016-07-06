@@ -11,7 +11,7 @@ import Foundation
 class RappiConfig: AppConfig {
     
     static func getBaseUrl() -> String{
-            return get("dev")
+            return getString("dev")
     }
     
 }
