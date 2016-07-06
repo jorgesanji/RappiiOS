@@ -1,0 +1,775 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C3EFFB5737A80B167D49657B /* Pods_RappiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 730CEB7E088F77F4178B4312 /* Pods_RappiTests.framework */; };
+		D85A33701D2BD7E8007D9CC8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D85A336E1D2BD7E8007D9CC8 /* Main.storyboard */; };
+		D85A33721D2BD7E8007D9CC8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D85A33711D2BD7E8007D9CC8 /* Assets.xcassets */; };
+		D85A33751D2BD7E8007D9CC8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D85A33731D2BD7E8007D9CC8 /* LaunchScreen.storyboard */; };
+		D85A33801D2BD7E9007D9CC8 /* RappiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85A337F1D2BD7E9007D9CC8 /* RappiTests.swift */; };
+		D85A338B1D2BD7E9007D9CC8 /* RappiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85A338A1D2BD7E9007D9CC8 /* RappiUITests.swift */; };
+		D85A33A11D2C03F4007D9CC8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85A33A01D2C03F4007D9CC8 /* AppDelegate.swift */; };
+		D85A33A41D2C09F9007D9CC8 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85A33A31D2C09F9007D9CC8 /* BaseViewController.swift */; };
+		D85A33AA1D2C0EF0007D9CC8 /* ViewController+Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85A33A91D2C0EF0007D9CC8 /* ViewController+Device.swift */; };
+		D85A33AC1D2C1700007D9CC8 /* UIView+Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85A33AB1D2C1700007D9CC8 /* UIView+Style.swift */; };
+		D85A33B81D2C1A44007D9CC8 /* RestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85A33B71D2C1A44007D9CC8 /* RestManager.swift */; };
+		D85A33BA1D2C1C9D007D9CC8 /* Application+RestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85A33B91D2C1C9D007D9CC8 /* Application+RestManager.swift */; };
+		D85A33BC1D2C1E88007D9CC8 /* AppDelegate+CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85A33BB1D2C1E88007D9CC8 /* AppDelegate+CoreData.swift */; };
+		D8BBBA5E1D2C65DA00D88D13 /* config.json in Resources */ = {isa = PBXBuildFile; fileRef = D8BBBA5D1D2C65DA00D88D13 /* config.json */; };
+		D8BBBA641D2C7FEB00D88D13 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8BBBA631D2C7FEB00D88D13 /* ViewController.swift */; };
+		D8BBBA661D2C809E00D88D13 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8BBBA651D2C809E00D88D13 /* AppConfig.swift */; };
+		D8BBBA681D2C810100D88D13 /* RappiConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8BBBA671D2C810100D88D13 /* RappiConfig.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D85A337C1D2BD7E9007D9CC8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D85A335F1D2BD7E8007D9CC8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D85A33661D2BD7E8007D9CC8;
+			remoteInfo = Rappi;
+		};
+		D85A33871D2BD7E9007D9CC8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D85A335F1D2BD7E8007D9CC8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D85A33661D2BD7E8007D9CC8;
+			remoteInfo = Rappi;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1DC7DCAAF86B1B5210E0B771 /* Pods-RappiTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RappiTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RappiTests/Pods-RappiTests.release.xcconfig"; sourceTree = "<group>"; };
+		730CEB7E088F77F4178B4312 /* Pods_RappiTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RappiTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0EC8912E2098D5541C884B1 /* Pods-RappiTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RappiTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RappiTests/Pods-RappiTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D85A33671D2BD7E8007D9CC8 /* Rappi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rappi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D85A336F1D2BD7E8007D9CC8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D85A33711D2BD7E8007D9CC8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D85A33741D2BD7E8007D9CC8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D85A33761D2BD7E8007D9CC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D85A337B1D2BD7E9007D9CC8 /* RappiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RappiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D85A337F1D2BD7E9007D9CC8 /* RappiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RappiTests.swift; sourceTree = "<group>"; };
+		D85A33811D2BD7E9007D9CC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D85A33861D2BD7E9007D9CC8 /* RappiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RappiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D85A338A1D2BD7E9007D9CC8 /* RappiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RappiUITests.swift; sourceTree = "<group>"; };
+		D85A338C1D2BD7E9007D9CC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D85A33991D2C0255007D9CC8 /* Rappi_Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Rappi_Header.h; sourceTree = "<group>"; };
+		D85A33A01D2C03F4007D9CC8 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D85A33A31D2C09F9007D9CC8 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		D85A33A91D2C0EF0007D9CC8 /* ViewController+Device.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+Device.swift"; sourceTree = "<group>"; };
+		D85A33AB1D2C1700007D9CC8 /* UIView+Style.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Style.swift"; sourceTree = "<group>"; };
+		D85A33B71D2C1A44007D9CC8 /* RestManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestManager.swift; sourceTree = "<group>"; };
+		D85A33B91D2C1C9D007D9CC8 /* Application+RestManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Application+RestManager.swift"; sourceTree = "<group>"; };
+		D85A33BB1D2C1E88007D9CC8 /* AppDelegate+CoreData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AppDelegate+CoreData.swift"; sourceTree = "<group>"; };
+		D8BBBA5D1D2C65DA00D88D13 /* config.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = config.json; sourceTree = "<group>"; };
+		D8BBBA631D2C7FEB00D88D13 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D8BBBA651D2C809E00D88D13 /* AppConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
+		D8BBBA671D2C810100D88D13 /* RappiConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RappiConfig.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D85A33641D2BD7E8007D9CC8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D85A33781D2BD7E9007D9CC8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3EFFB5737A80B167D49657B /* Pods_RappiTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D85A33831D2BD7E9007D9CC8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D85A335E1D2BD7E8007D9CC8 = {
+			isa = PBXGroup;
+			children = (
+				D85A33691D2BD7E8007D9CC8 /* Rappi */,
+				D85A337E1D2BD7E9007D9CC8 /* RappiTests */,
+				D85A33891D2BD7E9007D9CC8 /* RappiUITests */,
+				D85A33681D2BD7E8007D9CC8 /* Products */,
+				E431626AC936C0AE59E568D8 /* Pods */,
+				F57389A1D207D3B1C3A217FD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D85A33681D2BD7E8007D9CC8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D85A33671D2BD7E8007D9CC8 /* Rappi.app */,
+				D85A337B1D2BD7E9007D9CC8 /* RappiTests.xctest */,
+				D85A33861D2BD7E9007D9CC8 /* RappiUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D85A33691D2BD7E8007D9CC8 /* Rappi */ = {
+			isa = PBXGroup;
+			children = (
+				D8BBBA621D2C7F9F00D88D13 /* Core */,
+				D85A33991D2C0255007D9CC8 /* Rappi_Header.h */,
+				D85A339F1D2C03A2007D9CC8 /* Utils */,
+				D85A339E1D2C037C007D9CC8 /* Application */,
+				D85A339D1D2C0315007D9CC8 /* Controller */,
+				D85A339C1D2C02F4007D9CC8 /* View */,
+				D85A339B1D2C02CD007D9CC8 /* Business */,
+				D85A339A1D2C02A3007D9CC8 /* DataAccess */,
+				D85A33981D2C0084007D9CC8 /* Resources */,
+				D85A336E1D2BD7E8007D9CC8 /* Main.storyboard */,
+				D85A33711D2BD7E8007D9CC8 /* Assets.xcassets */,
+				D85A33731D2BD7E8007D9CC8 /* LaunchScreen.storyboard */,
+				D85A33761D2BD7E8007D9CC8 /* Info.plist */,
+			);
+			path = Rappi;
+			sourceTree = "<group>";
+		};
+		D85A337E1D2BD7E9007D9CC8 /* RappiTests */ = {
+			isa = PBXGroup;
+			children = (
+				D85A337F1D2BD7E9007D9CC8 /* RappiTests.swift */,
+				D85A33811D2BD7E9007D9CC8 /* Info.plist */,
+			);
+			path = RappiTests;
+			sourceTree = "<group>";
+		};
+		D85A33891D2BD7E9007D9CC8 /* RappiUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D85A338A1D2BD7E9007D9CC8 /* RappiUITests.swift */,
+				D85A338C1D2BD7E9007D9CC8 /* Info.plist */,
+			);
+			path = RappiUITests;
+			sourceTree = "<group>";
+		};
+		D85A33981D2C0084007D9CC8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D8BBBA5F1D2C65E100D88D13 /* Config */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D85A339A1D2C02A3007D9CC8 /* DataAccess */ = {
+			isa = PBXGroup;
+			children = (
+				D85A33B11D2C1968007D9CC8 /* Rest */,
+			);
+			path = DataAccess;
+			sourceTree = "<group>";
+		};
+		D85A339B1D2C02CD007D9CC8 /* Business */ = {
+			isa = PBXGroup;
+			children = (
+				D85A33AF1D2C18FE007D9CC8 /* Model */,
+				D85A33AE1D2C1881007D9CC8 /* Adapters */,
+				D85A33AD1D2C17DA007D9CC8 /* UseCases */,
+			);
+			path = Business;
+			sourceTree = "<group>";
+		};
+		D85A339C1D2C02F4007D9CC8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D85A339D1D2C0315007D9CC8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D85A33A21D2C09D4007D9CC8 /* Base */,
+				D8BBBA631D2C7FEB00D88D13 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D85A339E1D2C037C007D9CC8 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				D85A33A01D2C03F4007D9CC8 /* AppDelegate.swift */,
+				D85A33B91D2C1C9D007D9CC8 /* Application+RestManager.swift */,
+				D85A33BB1D2C1E88007D9CC8 /* AppDelegate+CoreData.swift */,
+				D8BBBA671D2C810100D88D13 /* RappiConfig.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		D85A339F1D2C03A2007D9CC8 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				D85A33A81D2C0E8D007D9CC8 /* Extensions */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		D85A33A21D2C09D4007D9CC8 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				D85A33A31D2C09F9007D9CC8 /* BaseViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		D85A33A81D2C0E8D007D9CC8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D85A33A91D2C0EF0007D9CC8 /* ViewController+Device.swift */,
+				D85A33AB1D2C1700007D9CC8 /* UIView+Style.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D85A33AD1D2C17DA007D9CC8 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		D85A33AE1D2C1881007D9CC8 /* Adapters */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Adapters;
+			sourceTree = "<group>";
+		};
+		D85A33AF1D2C18FE007D9CC8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D85A33B11D2C1968007D9CC8 /* Rest */ = {
+			isa = PBXGroup;
+			children = (
+				D85A33B61D2C1A16007D9CC8 /* Manager */,
+				D85A33B51D2C19FC007D9CC8 /* Services */,
+				D85A33B41D2C19BA007D9CC8 /* Model */,
+			);
+			path = Rest;
+			sourceTree = "<group>";
+		};
+		D85A33B41D2C19BA007D9CC8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D85A33B51D2C19FC007D9CC8 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		D85A33B61D2C1A16007D9CC8 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				D85A33B71D2C1A44007D9CC8 /* RestManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		D8BBBA5F1D2C65E100D88D13 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				D8BBBA5D1D2C65DA00D88D13 /* config.json */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		D8BBBA621D2C7F9F00D88D13 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				D8BBBA651D2C809E00D88D13 /* AppConfig.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		E431626AC936C0AE59E568D8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D0EC8912E2098D5541C884B1 /* Pods-RappiTests.debug.xcconfig */,
+				1DC7DCAAF86B1B5210E0B771 /* Pods-RappiTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F57389A1D207D3B1C3A217FD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				730CEB7E088F77F4178B4312 /* Pods_RappiTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D85A33661D2BD7E8007D9CC8 /* Rappi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D85A338F1D2BD7E9007D9CC8 /* Build configuration list for PBXNativeTarget "Rappi" */;
+			buildPhases = (
+				D85A33631D2BD7E8007D9CC8 /* Sources */,
+				D85A33641D2BD7E8007D9CC8 /* Frameworks */,
+				D85A33651D2BD7E8007D9CC8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Rappi;
+			productName = Rappi;
+			productReference = D85A33671D2BD7E8007D9CC8 /* Rappi.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D85A337A1D2BD7E9007D9CC8 /* RappiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D85A33921D2BD7E9007D9CC8 /* Build configuration list for PBXNativeTarget "RappiTests" */;
+			buildPhases = (
+				E449914C79CFDC60EF32656B /* Check Pods Manifest.lock */,
+				D85A33771D2BD7E9007D9CC8 /* Sources */,
+				D85A33781D2BD7E9007D9CC8 /* Frameworks */,
+				D85A33791D2BD7E9007D9CC8 /* Resources */,
+				93C7F122A698875F69E77CCE /* Embed Pods Frameworks */,
+				9C62F2868761151CE947E55B /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D85A337D1D2BD7E9007D9CC8 /* PBXTargetDependency */,
+			);
+			name = RappiTests;
+			productName = RappiTests;
+			productReference = D85A337B1D2BD7E9007D9CC8 /* RappiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D85A33851D2BD7E9007D9CC8 /* RappiUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D85A33951D2BD7E9007D9CC8 /* Build configuration list for PBXNativeTarget "RappiUITests" */;
+			buildPhases = (
+				D85A33821D2BD7E9007D9CC8 /* Sources */,
+				D85A33831D2BD7E9007D9CC8 /* Frameworks */,
+				D85A33841D2BD7E9007D9CC8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D85A33881D2BD7E9007D9CC8 /* PBXTargetDependency */,
+			);
+			name = RappiUITests;
+			productName = RappiUITests;
+			productReference = D85A33861D2BD7E9007D9CC8 /* RappiUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D85A335F1D2BD7E8007D9CC8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = gravility;
+				TargetAttributes = {
+					D85A33661D2BD7E8007D9CC8 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					D85A337A1D2BD7E9007D9CC8 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = D85A33661D2BD7E8007D9CC8;
+					};
+					D85A33851D2BD7E9007D9CC8 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = D85A33661D2BD7E8007D9CC8;
+					};
+				};
+			};
+			buildConfigurationList = D85A33621D2BD7E8007D9CC8 /* Build configuration list for PBXProject "Rappi" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D85A335E1D2BD7E8007D9CC8;
+			productRefGroup = D85A33681D2BD7E8007D9CC8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D85A33661D2BD7E8007D9CC8 /* Rappi */,
+				D85A337A1D2BD7E9007D9CC8 /* RappiTests */,
+				D85A33851D2BD7E9007D9CC8 /* RappiUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D85A33651D2BD7E8007D9CC8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D85A33751D2BD7E8007D9CC8 /* LaunchScreen.storyboard in Resources */,
+				D8BBBA5E1D2C65DA00D88D13 /* config.json in Resources */,
+				D85A33721D2BD7E8007D9CC8 /* Assets.xcassets in Resources */,
+				D85A33701D2BD7E8007D9CC8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D85A33791D2BD7E9007D9CC8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D85A33841D2BD7E9007D9CC8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		93C7F122A698875F69E77CCE /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RappiTests/Pods-RappiTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9C62F2868761151CE947E55B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RappiTests/Pods-RappiTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E449914C79CFDC60EF32656B /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D85A33631D2BD7E8007D9CC8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8BBBA641D2C7FEB00D88D13 /* ViewController.swift in Sources */,
+				D8BBBA661D2C809E00D88D13 /* AppConfig.swift in Sources */,
+				D8BBBA681D2C810100D88D13 /* RappiConfig.swift in Sources */,
+				D85A33AA1D2C0EF0007D9CC8 /* ViewController+Device.swift in Sources */,
+				D85A33BA1D2C1C9D007D9CC8 /* Application+RestManager.swift in Sources */,
+				D85A33A11D2C03F4007D9CC8 /* AppDelegate.swift in Sources */,
+				D85A33B81D2C1A44007D9CC8 /* RestManager.swift in Sources */,
+				D85A33A41D2C09F9007D9CC8 /* BaseViewController.swift in Sources */,
+				D85A33AC1D2C1700007D9CC8 /* UIView+Style.swift in Sources */,
+				D85A33BC1D2C1E88007D9CC8 /* AppDelegate+CoreData.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D85A33771D2BD7E9007D9CC8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D85A33801D2BD7E9007D9CC8 /* RappiTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D85A33821D2BD7E9007D9CC8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D85A338B1D2BD7E9007D9CC8 /* RappiUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D85A337D1D2BD7E9007D9CC8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D85A33661D2BD7E8007D9CC8 /* Rappi */;
+			targetProxy = D85A337C1D2BD7E9007D9CC8 /* PBXContainerItemProxy */;
+		};
+		D85A33881D2BD7E9007D9CC8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D85A33661D2BD7E8007D9CC8 /* Rappi */;
+			targetProxy = D85A33871D2BD7E9007D9CC8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D85A336E1D2BD7E8007D9CC8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D85A336F1D2BD7E8007D9CC8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D85A33731D2BD7E8007D9CC8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D85A33741D2BD7E8007D9CC8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D85A338D1D2BD7E9007D9CC8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D85A338E1D2BD7E9007D9CC8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D85A33901D2BD7E9007D9CC8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Rappi/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gravility.Rappi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = Rappi/Rappi_Header.h;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D85A33911D2BD7E9007D9CC8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Rappi/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gravility.Rappi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = Rappi/Rappi_Header.h;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D85A33931D2BD7E9007D9CC8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D0EC8912E2098D5541C884B1 /* Pods-RappiTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RappiTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gravility.RappiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rappi.app/Rappi";
+			};
+			name = Debug;
+		};
+		D85A33941D2BD7E9007D9CC8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1DC7DCAAF86B1B5210E0B771 /* Pods-RappiTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RappiTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gravility.RappiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rappi.app/Rappi";
+			};
+			name = Release;
+		};
+		D85A33961D2BD7E9007D9CC8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = RappiUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gravility.RappiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Rappi;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		D85A33971D2BD7E9007D9CC8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = RappiUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gravility.RappiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Rappi;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D85A33621D2BD7E8007D9CC8 /* Build configuration list for PBXProject "Rappi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D85A338D1D2BD7E9007D9CC8 /* Debug */,
+				D85A338E1D2BD7E9007D9CC8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D85A338F1D2BD7E9007D9CC8 /* Build configuration list for PBXNativeTarget "Rappi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D85A33901D2BD7E9007D9CC8 /* Debug */,
+				D85A33911D2BD7E9007D9CC8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D85A33921D2BD7E9007D9CC8 /* Build configuration list for PBXNativeTarget "RappiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D85A33931D2BD7E9007D9CC8 /* Debug */,
+				D85A33941D2BD7E9007D9CC8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D85A33951D2BD7E9007D9CC8 /* Build configuration list for PBXNativeTarget "RappiUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D85A33961D2BD7E9007D9CC8 /* Debug */,
+				D85A33971D2BD7E9007D9CC8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D85A335F1D2BD7E8007D9CC8 /* Project object */;
+}
