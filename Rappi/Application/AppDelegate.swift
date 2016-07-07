@@ -26,18 +26,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         initDatabase()
         
         // Init RootController
-        let viewController = SplashViewController()
-        self.navigationController = UINavigationController()
-        self.navigationController!.pushViewController(viewController, animated: false)
-        self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
-        self.window!.rootViewController = navigationController
-        self.window!.backgroundColor = UIColor.whiteColor()
-        self.window?.makeKeyAndVisible()
+        gotoSplash()
         
         // Add style to navigation bar
         AppStyles.applyGlobalStyle()
         
         return true
+    }
+    
+    static func Delegate()->AppDelegate{
+        return UIApplication.sharedApplication().delegate as! AppDelegate
     }
 
     func applicationWillResignActive(application: UIApplication) {

@@ -33,6 +33,6 @@ extension UIView{
         self.layer.borderColor = color.CGColor
         self.layer.masksToBounds = true
     }
-
-
+    
+    
 }

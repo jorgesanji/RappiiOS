@@ -9,26 +9,8 @@
 import UIKit
 import PureLayout
 
-typealias onLoadMoreData = () -> Void
-
 class BaseView: UIView {
-    
-    static let KTagIndicator:NSInteger = 1000
-    
-    /// Show or hide activity indicator
-    var showIndicator:Bool{
-        get{
-            return self.showIndicator
-        }
-        set{
-            if newValue{
-                addIndicator()
-            }else{
-                self.viewWithTag(BaseView.KTagIndicator)?.removeFromSuperview()
-            }
-        }
-    }
-    
+
     /// Indicates already is setted constraints
     private var didSetupConstraints = false
     
@@ -72,20 +54,5 @@ class BaseView: UIView {
         initialize()
         updateConstraints()
     }
-    
-    private func addIndicator(){
-        if let indicatorView = self.viewWithTag(BaseView.KTagIndicator) as? UIActivityIndicatorView{
-            indicatorView.hidden = false
-            indicatorView.startAnimating()
-        }else{
-            let indicatorView = UIActivityIndicatorView(activityIndicatorStyle:.Gray)
-            indicatorView.translatesAutoresizingMaskIntoConstraints = false
-            self.addSubview(indicatorView)
-            indicatorView.autoCenterInSuperview()
-            indicatorView.color = UIColor.redColor()
-            indicatorView.hidesWhenStopped = true
-            indicatorView.tag = BaseView.KTagIndicator
-            indicatorView.startAnimating()
-        }
-    }
+
 }

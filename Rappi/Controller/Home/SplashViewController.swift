@@ -9,34 +9,24 @@
 import Foundation
 import UIKit
 
-class SplashViewController:BaseViewController{
-
-    /// override root view
-    var Oview: SplashView! { return self.view as! SplashView }
-    
-    // MARK:- Properties
-    
-    
-    // MARK:- UIViewController
-    
-    override func loadView() {
-        self.view = SplashView()
-    }
+class SplashViewController:RappiViewController<SplashView>{
     
     override func viewWillAppear(animated: Bool){
-//        super.viewWillAppear(animated)
+        super.viewWillAppear(animated)
         self.navigationController?.navigationBarHidden = true
-        UIApplication.sharedApplication().statusBarHidden = true
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        rootView.titleSplash = NSLocalizedString("app_name", comment: "")
+        rootView.animate(0.5) { () -> Void in
+            AppDelegate.Delegate().gotoHome()
+        }
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    override func prefersStatusBarHidden() -> Bool {
+        return true
     }
-
+    
 }

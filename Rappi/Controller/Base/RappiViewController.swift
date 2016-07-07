@@ -8,12 +8,24 @@
 
 import UIKit
 
-class BaseViewController: UIViewController {
+class RappiViewController<V : BaseView>: UIViewController {
+
+    // MARK:- UIViewController
+    
+    /// override root view
+    var rootView: V! { return self.view as! V }
+    
+    override func loadView() {
+        self.view = V()
+    }
+    
+    init() {
+        super.init(nibName: nil, bundle: nil)
+    }
     
     override func viewWillAppear(animated: Bool){
         super.viewWillAppear(animated)
         self.navigationController?.navigationBarHidden = false
-        UIApplication.sharedApplication().statusBarHidden = false
     }
     
     override func viewDidLoad() {
@@ -26,6 +38,8 @@ class BaseViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    // MARK:- UIViewController rotation
+    
     override func shouldAutorotate() -> Bool {
         return true
     }
@@ -36,6 +50,11 @@ class BaseViewController: UIViewController {
         }
         
         return [UIInterfaceOrientationMask.Portrait]
-
-    } 
+    }
+    
+    // MARK:- UIViewController status bar
+    
+    override func prefersStatusBarHidden() -> Bool {
+        return false
+    }
 }

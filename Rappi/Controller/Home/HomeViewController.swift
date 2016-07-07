@@ -8,31 +8,12 @@
 
 import UIKit
 
-class HomeViewController: BaseViewController {
-    
-    /// override root view
-    var Oview: HomeView! { return self.view as! HomeView }
-    
-    // MARK:- Properties
-    
-    
-    // MARK:- UIViewController
-    
-    override func loadView() {
-        self.view = HomeView()
-    }
+class HomeViewController: RappiViewController<HomeView> {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        Oview.showIndicator = true
+        rootView.showIndicator = true
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
 }
 

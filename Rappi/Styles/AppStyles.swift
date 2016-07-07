@@ -28,5 +28,9 @@ class AppStyles {
     static func titleColor()-> UIColor{
         return UIColor.whiteColor()
     }
+    
+    static func backgroundIndicatorColor()-> UIColor{
+        return UIColor(hexString:"#80E2E2E2")
+    }
 
 }
