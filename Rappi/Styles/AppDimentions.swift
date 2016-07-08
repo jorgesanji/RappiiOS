@@ -19,6 +19,4 @@ struct AppDimentions{
     static let SIZE_TITLE_WIDTH:CGFloat = 140.0
     static let SIZE_TITLE_HEIGHT:CGFloat = 40.0
 
-
-    
 }
