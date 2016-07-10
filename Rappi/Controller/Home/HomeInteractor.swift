@@ -10,22 +10,28 @@ import UIKit
 
 protocol HomeInteractorInput
 {
-    func fetchApplications(request:String)
+    func fetchApplications()
 }
 
 protocol HomeInteractorOutput
 {
-    func presentFetchedApplicattions(response: NSArray)
+    func applicationsFetched(response: NSArray)
 }
 
-class HomeInteractor: HomeInteractorInput
+class HomeInteractor: Interactor, HomeInteractorInput
 {
-    var output: HomeInteractorOutput!
+    
+    required init()
+    {
+        super.init()
+    }
     
     // MARK: Business logic
     
-    func fetchApplications(request: String)
+    func fetchApplications()
     {
         
+        (output as! HomeInteractorOutput).applicationsFetched([])
+    
     }
 }

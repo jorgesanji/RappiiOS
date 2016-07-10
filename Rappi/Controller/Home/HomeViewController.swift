@@ -10,21 +10,31 @@ import UIKit
 
 protocol HomeViewControllerInput
 {
-    func displayApplicationList(viewModel:NSArray)
+    func displayApplicationList(applications:NSArray)
 }
 
 protocol HomeViewControllerOutput
 {
-    func fetchApplications(request: String)
+    func fetchApplications()
 }
 
-class HomeViewController: RappiViewController<HomeView> {
+class HomeViewController: RappiViewController<HomeView,HomePresenter, HomeInteractor, HomeRouter >, HomeViewControllerInput {
+    
+//    var presenter: HomeViewControllerOutput!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         rootView.showIndicator = true
         self.title = NSLocalizedString("app_categories", comment: "")
+        
+        presenter.fetchApplications()
     }
+    
+    
+    func displayApplicationList(aplications: NSArray) {
+                
+    }
+    
 }
 

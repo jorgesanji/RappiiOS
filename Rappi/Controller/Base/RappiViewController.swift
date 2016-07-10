@@ -8,12 +8,16 @@
 
 import UIKit
 
-class RappiViewController<V : BaseView>: UIViewController {
+class RappiViewController <V : BaseView, P : Presenter, I : Interactor, R : Router>: UIViewController {
+
+    var presenter: P!
+    var router: R!
 
     // MARK:- UIViewController
     
     /// override root view
     var rootView: V! { return self.view as! V }
+    
     
     override func loadView() {
         self.view = V()
@@ -21,6 +25,7 @@ class RappiViewController<V : BaseView>: UIViewController {
     
     init() {
         super.init(nibName: nil, bundle: nil)
+        configure();
     }
     
     override func viewWillAppear(animated: Bool){
@@ -56,5 +61,20 @@ class RappiViewController<V : BaseView>: UIViewController {
     
     override func prefersStatusBarHidden() -> Bool {
         return false
+    }
+    
+    private func configure()
+    {
+        self.router = R()
+        self.presenter = P()
+        let interactor = I()
+        
+        router.viewController = self
+
+        presenter.view = self
+        presenter.interactor = interactor
+        
+        interactor.output = presenter
+        
     }
 }

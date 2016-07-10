@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D812A3A61D312F6D00AF3246 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D812A3A51D312F6D00AF3246 /* SplashViewController.swift */; };
+		D812A3A91D32F6F900AF3246 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D812A3A81D32F6F900AF3246 /* Presenter.swift */; };
+		D812A3AC1D32F73A00AF3246 /* Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D812A3AB1D32F73A00AF3246 /* Interactor.swift */; };
+		D812A3AF1D32F79D00AF3246 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = D812A3AE1D32F79D00AF3246 /* Router.swift */; };
 		D81ACA961D2EBF3F0059C841 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D81ACA981D2EBF3F0059C841 /* Localizable.strings */; };
 		D81ACA9B1D2EC3420059C841 /* AppDelegate+Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81ACA9A1D2EC3420059C841 /* AppDelegate+Navigation.swift */; };
-		D81ACA9D1D300EE40059C841 /* HomeConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81ACA9C1D300EE40059C841 /* HomeConfigurator.swift */; };
 		D81ACA9F1D300F0C0059C841 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81ACA9E1D300F0C0059C841 /* HomePresenter.swift */; };
 		D81ACAA11D300F200059C841 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81ACAA01D300F200059C841 /* HomeInteractor.swift */; };
 		D81ACAA31D300F2F0059C841 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81ACAA21D300F2F0059C841 /* HomeRouter.swift */; };
@@ -33,7 +36,6 @@
 		D8B622961D2D71DD00302BAC /* AppDimentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B622951D2D71DD00302BAC /* AppDimentions.swift */; };
 		D8B622981D2D71F500302BAC /* AppStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B622971D2D71F500302BAC /* AppStyles.swift */; };
 		D8B6229B1D2D72F600302BAC /* Color+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B6229A1D2D72F600302BAC /* Color+Hex.swift */; };
-		D8B6229E1D2D7CDB00302BAC /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B6229D1D2D7CDB00302BAC /* SplashViewController.swift */; };
 		D8B622A11D2D7EF800302BAC /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B622A01D2D7EF800302BAC /* SplashView.swift */; };
 		D8BBBA5E1D2C65DA00D88D13 /* AppConfig.json in Resources */ = {isa = PBXBuildFile; fileRef = D8BBBA5D1D2C65DA00D88D13 /* AppConfig.json */; };
 		D8BBBA681D2C810100D88D13 /* RappiConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8BBBA671D2C810100D88D13 /* RappiConfig.swift */; };
@@ -61,11 +63,14 @@
 		05507244113781D7AE5BBC9E /* Pods-Rappi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rappi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Rappi/Pods-Rappi.debug.xcconfig"; sourceTree = "<group>"; };
 		17352A2FDA33D1D03AA9D059 /* Pods-Rappi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rappi.release.xcconfig"; path = "Pods/Target Support Files/Pods-Rappi/Pods-Rappi.release.xcconfig"; sourceTree = "<group>"; };
 		AC57AF7436AFF1547E3FD2B5 /* Pods_Rappi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Rappi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D812A3A51D312F6D00AF3246 /* SplashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SplashViewController.swift; path = Rappi/Controller/Splash/SplashViewController.swift; sourceTree = SOURCE_ROOT; };
+		D812A3A81D32F6F900AF3246 /* Presenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
+		D812A3AB1D32F73A00AF3246 /* Interactor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Interactor.swift; sourceTree = "<group>"; };
+		D812A3AE1D32F79D00AF3246 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		D81ACA881D2E76420059C841 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		D81ACA971D2EBF3F0059C841 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		D81ACA991D2EBF400059C841 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		D81ACA9A1D2EC3420059C841 /* AppDelegate+Navigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AppDelegate+Navigation.swift"; sourceTree = "<group>"; };
-		D81ACA9C1D300EE40059C841 /* HomeConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeConfigurator.swift; sourceTree = "<group>"; };
 		D81ACA9E1D300F0C0059C841 /* HomePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
 		D81ACAA01D300F200059C841 /* HomeInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
 		D81ACAA21D300F2F0059C841 /* HomeRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
@@ -95,7 +100,6 @@
 		D8B622951D2D71DD00302BAC /* AppDimentions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDimentions.swift; sourceTree = "<group>"; };
 		D8B622971D2D71F500302BAC /* AppStyles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppStyles.swift; sourceTree = "<group>"; };
 		D8B6229A1D2D72F600302BAC /* Color+Hex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+Hex.swift"; sourceTree = "<group>"; };
-		D8B6229D1D2D7CDB00302BAC /* SplashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SplashViewController.swift; path = ../Home/SplashViewController.swift; sourceTree = "<group>"; };
 		D8B622A01D2D7EF800302BAC /* SplashView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		D8BBBA5D1D2C65DA00D88D13 /* AppConfig.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = AppConfig.json; sourceTree = "<group>"; };
 		D8BBBA671D2C810100D88D13 /* RappiConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RappiConfig.swift; sourceTree = "<group>"; };
@@ -142,6 +146,30 @@
 				17352A2FDA33D1D03AA9D059 /* Pods-Rappi.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		D812A3A71D32F6D800AF3246 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				D812A3A81D32F6F900AF3246 /* Presenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		D812A3AA1D32F70E00AF3246 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				D812A3AB1D32F73A00AF3246 /* Interactor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		D812A3AD1D32F78900AF3246 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				D812A3AE1D32F79D00AF3246 /* Router.swift */,
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 		D81ACA8F1D2EBED50059C841 /* Language */ = {
@@ -343,7 +371,6 @@
 			isa = PBXGroup;
 			children = (
 				D8B622821D2D5C2700302BAC /* HomeViewController.swift */,
-				D81ACA9C1D300EE40059C841 /* HomeConfigurator.swift */,
 				D81ACA9E1D300F0C0059C841 /* HomePresenter.swift */,
 				D81ACAA01D300F200059C841 /* HomeInteractor.swift */,
 				D81ACAA21D300F2F0059C841 /* HomeRouter.swift */,
@@ -413,9 +440,10 @@
 		D8B6229C1D2D7C9800302BAC /* Splash */ = {
 			isa = PBXGroup;
 			children = (
-				D8B6229D1D2D7CDB00302BAC /* SplashViewController.swift */,
+				D812A3A51D312F6D00AF3246 /* SplashViewController.swift */,
 			);
-			path = Splash;
+			name = Splash;
+			path = ../../../../../Rappi/Rappi/Application/Splash;
 			sourceTree = "<group>";
 		};
 		D8B6229F1D2D7EDD00302BAC /* Splash */ = {
@@ -437,6 +465,9 @@
 		D8BBBA621D2C7F9F00D88D13 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				D812A3AD1D32F78900AF3246 /* Router */,
+				D812A3AA1D32F70E00AF3246 /* Interactor */,
+				D812A3A71D32F6D800AF3246 /* Presenter */,
 				D8B622991D2D72C600302BAC /* Utils */,
 				D8B6228A1D2D5E8A00302BAC /* View */,
 				D8B622871D2D5E5D00302BAC /* Config */,
@@ -631,23 +662,25 @@
 				D8B622831D2D5C2700302BAC /* HomeViewController.swift in Sources */,
 				D8B622891D2D5E8400302BAC /* AppConfig.swift in Sources */,
 				D8BBBA681D2C810100D88D13 /* RappiConfig.swift in Sources */,
-				D8B6229E1D2D7CDB00302BAC /* SplashViewController.swift in Sources */,
 				D85A33AA1D2C0EF0007D9CC8 /* ViewController+Device.swift in Sources */,
+				D812A3AF1D32F79D00AF3246 /* Router.swift in Sources */,
 				D8B622931D2D70D600302BAC /* CollectionDataSource.swift in Sources */,
 				D85A33BA1D2C1C9D007D9CC8 /* Application+RestManager.swift in Sources */,
 				D85A33A11D2C03F4007D9CC8 /* AppDelegate.swift in Sources */,
 				D85A33B81D2C1A44007D9CC8 /* RestManager.swift in Sources */,
+				D812A3AC1D32F73A00AF3246 /* Interactor.swift in Sources */,
 				D85A33A41D2C09F9007D9CC8 /* RappiViewController.swift in Sources */,
 				D85A33AC1D2C1700007D9CC8 /* UIView+Style.swift in Sources */,
 				D8B622961D2D71DD00302BAC /* AppDimentions.swift in Sources */,
 				D8B6228E1D2D5FD100302BAC /* HomeView.swift in Sources */,
 				D81ACAA31D300F2F0059C841 /* HomeRouter.swift in Sources */,
 				D8B622A11D2D7EF800302BAC /* SplashView.swift in Sources */,
+				D812A3A91D32F6F900AF3246 /* Presenter.swift in Sources */,
 				D81ACA9B1D2EC3420059C841 /* AppDelegate+Navigation.swift in Sources */,
+				D812A3A61D312F6D00AF3246 /* SplashViewController.swift in Sources */,
 				D8B622911D2D61AD00302BAC /* RappiView.swift in Sources */,
 				D8B622981D2D71F500302BAC /* AppStyles.swift in Sources */,
 				D8B6228C1D2D5ECB00302BAC /* BaseView.swift in Sources */,
-				D81ACA9D1D300EE40059C841 /* HomeConfigurator.swift in Sources */,
 				D8B6229B1D2D72F600302BAC /* Color+Hex.swift in Sources */,
 				D81ACAA11D300F200059C841 /* HomeInteractor.swift in Sources */,
 				D85A33BC1D2C1E88007D9CC8 /* AppDelegate+CoreData.swift in Sources */,

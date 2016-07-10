@@ -9,7 +9,9 @@
 import Foundation
 import UIKit
 
-class SplashViewController:RappiViewController<SplashView>{
+//class SplashViewController:RappiViewController<SplashView>{
+
+class SplashViewController: RappiViewController<SplashView,HomePresenter, HomeInteractor, HomeRouter > {
     
     override func viewWillAppear(animated: Bool){
         super.viewWillAppear(animated)
