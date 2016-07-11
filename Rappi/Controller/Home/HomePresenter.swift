@@ -8,37 +8,38 @@
 
 import UIKit
 
-protocol HomePresenterInput: class
+protocol HomePresenterInput: class, PresenterInput
 {
     func presentFetchedApplicattions(response:NSArray)
 }
 
-protocol HomePresenterOutput: class
+protocol HomePresenterOutput: class, PresenterOutput
 {
     func displayFetchApplication(viewModel:NSArray)
 }
 
 class HomePresenter: Presenter, HomeViewControllerOutput, HomeInteractorOutput
 {
-    
-    required init()
-    {
-        super.init()
-    }
-    
 
-//    weak var view: HomeViewControllerInput!
-//    var interactor: HomeInteractorInput!
-    
     // MARK: HomeInteractorOutput
-
+    
     func applicationsFetched(response: NSArray) {
-        (view as! HomeViewControllerInput).displayApplicationList(response)
+        getView().displayApplicationList(response)
     }
-
+    
     // MARK: HomeViewControllerOutput
     
     func fetchApplications() {
-        (self.interactor as! HomeInteractorInput).fetchApplications();
+        getInteractor().fetchApplications()
+    }
+    
+    // MARK: Properties GETTER
+    
+    func getView() -> HomeViewControllerInput{
+        return self.view as! HomeViewControllerInput
+    }
+    
+    func getInteractor() -> HomeInteractorInput{
+        return self.interactor as! HomeInteractorInput
     }
 }

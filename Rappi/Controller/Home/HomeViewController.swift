@@ -8,20 +8,18 @@
 
 import UIKit
 
-protocol HomeViewControllerInput
+protocol HomeViewControllerInput : ControllerInput
 {
     func displayApplicationList(applications:NSArray)
 }
 
-protocol HomeViewControllerOutput
+protocol HomeViewControllerOutput : ControllerOutput
 {
     func fetchApplications()
 }
 
-class HomeViewController: RappiViewController<HomeView,HomePresenter, HomeInteractor, HomeRouter >, HomeViewControllerInput {
+class HomeViewController: RappiViewController<HomeView, HomePresenter, HomeInteractor, HomeRouter>, HomeViewControllerInput {
     
-//    var presenter: HomeViewControllerOutput!
-
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -31,9 +29,11 @@ class HomeViewController: RappiViewController<HomeView,HomePresenter, HomeIntera
         presenter.fetchApplications()
     }
     
+    // MARK: HomeViewControllerInput
     
     func displayApplicationList(aplications: NSArray) {
-                
+        rootView.showIndicator = false
+
     }
     
 }

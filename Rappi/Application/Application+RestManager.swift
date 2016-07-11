@@ -11,6 +11,6 @@ import Foundation
 extension AppDelegate{
     
     func initRestService(){
-        RestManager.initWithBaseUrl(RappiConfig.getBaseUrl())
+        RappiManager.initWithBaseUrl(RappiConfig.getBaseUrl())
     }
 }

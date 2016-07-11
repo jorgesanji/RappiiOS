@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Router: NSObject{
+class Router : NSObject{
     
     // MARK: Instance Variables
     

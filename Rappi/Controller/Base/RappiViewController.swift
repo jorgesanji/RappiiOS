@@ -8,16 +8,15 @@
 
 import UIKit
 
-class RappiViewController <V : BaseView, P : Presenter, I : Interactor, R : Router>: UIViewController {
+class RappiViewController <V : BaseView, P: Presenter, I : Interactor, R : Router>: UIViewController {
 
     var presenter: P!
     var router: R!
 
-    // MARK:- UIViewController
+    // MARK:- UIViewController init
     
     /// override root view
     var rootView: V! { return self.view as! V }
-    
     
     override func loadView() {
         self.view = V()
@@ -27,6 +26,8 @@ class RappiViewController <V : BaseView, P : Presenter, I : Interactor, R : Rout
         super.init(nibName: nil, bundle: nil)
         configure();
     }
+    
+    // MARK:- UIViewController lifecycle
     
     override func viewWillAppear(animated: Bool){
         super.viewWillAppear(animated)
@@ -63,6 +64,8 @@ class RappiViewController <V : BaseView, P : Presenter, I : Interactor, R : Rout
         return false
     }
     
+    // MARK:- Build VIPER
+
     private func configure()
     {
         self.router = R()
@@ -75,6 +78,5 @@ class RappiViewController <V : BaseView, P : Presenter, I : Interactor, R : Rout
         presenter.interactor = interactor
         
         interactor.output = presenter
-        
     }
 }

@@ -8,6 +8,14 @@
 
 import Foundation
 
+protocol InteractorInput
+{
+}
+
+protocol InteractorOutput
+{
+}
+
 class Interactor : NSObject {
     
     // MARK: Instance Variables

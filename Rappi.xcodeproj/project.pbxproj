@@ -24,9 +24,14 @@
 		D85A33A41D2C09F9007D9CC8 /* RappiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85A33A31D2C09F9007D9CC8 /* RappiViewController.swift */; };
 		D85A33AA1D2C0EF0007D9CC8 /* ViewController+Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85A33A91D2C0EF0007D9CC8 /* ViewController+Device.swift */; };
 		D85A33AC1D2C1700007D9CC8 /* UIView+Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85A33AB1D2C1700007D9CC8 /* UIView+Style.swift */; };
-		D85A33B81D2C1A44007D9CC8 /* RestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85A33B71D2C1A44007D9CC8 /* RestManager.swift */; };
 		D85A33BA1D2C1C9D007D9CC8 /* Application+RestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85A33B91D2C1C9D007D9CC8 /* Application+RestManager.swift */; };
 		D85A33BC1D2C1E88007D9CC8 /* AppDelegate+CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85A33BB1D2C1E88007D9CC8 /* AppDelegate+CoreData.swift */; };
+		D89D4D931D34181600C1DE28 /* RestEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89D4D921D34181600C1DE28 /* RestEntry.swift */; };
+		D89D4D9B1D3427CA00C1DE28 /* RappiDB.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D89D4D991D3427CA00C1DE28 /* RappiDB.xcdatamodeld */; };
+		D89D4DB81D342B5A00C1DE28 /* Entry+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89D4DB41D342B5A00C1DE28 /* Entry+CoreDataProperties.swift */; };
+		D89D4DB91D342B5A00C1DE28 /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89D4DB51D342B5A00C1DE28 /* Entry.swift */; };
+		D89D4DBA1D342B5A00C1DE28 /* Category+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89D4DB61D342B5A00C1DE28 /* Category+CoreDataProperties.swift */; };
+		D89D4DBB1D342B5A00C1DE28 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89D4DB71D342B5A00C1DE28 /* Category.swift */; };
 		D8B622831D2D5C2700302BAC /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B622821D2D5C2700302BAC /* HomeViewController.swift */; };
 		D8B622891D2D5E8400302BAC /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B622881D2D5E8400302BAC /* AppConfig.swift */; };
 		D8B6228C1D2D5ECB00302BAC /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B6228B1D2D5ECB00302BAC /* BaseView.swift */; };
@@ -39,6 +44,12 @@
 		D8B622A11D2D7EF800302BAC /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B622A01D2D7EF800302BAC /* SplashView.swift */; };
 		D8BBBA5E1D2C65DA00D88D13 /* AppConfig.json in Resources */ = {isa = PBXBuildFile; fileRef = D8BBBA5D1D2C65DA00D88D13 /* AppConfig.json */; };
 		D8BBBA681D2C810100D88D13 /* RappiConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8BBBA671D2C810100D88D13 /* RappiConfig.swift */; };
+		D8D2E8811D339B3000C07D45 /* RappiPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D2E8801D339B3000C07D45 /* RappiPresenter.swift */; };
+		D8D2E8851D339F0000C07D45 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D2E8841D339F0000C07D45 /* BaseViewController.swift */; };
+		D8D2E8891D33BAB900C07D45 /* RestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D2E8881D33BAB900C07D45 /* RestManager.swift */; };
+		D8D2E88B1D33BACA00C07D45 /* RappiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D2E88A1D33BACA00C07D45 /* RappiManager.swift */; };
+		D8D2E8911D33C45000C07D45 /* RappiServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D2E8901D33C45000C07D45 /* RappiServices.swift */; };
+		D8D2E8971D33CD3800C07D45 /* RappiUseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D2E8961D33CD3800C07D45 /* RappiUseCases.swift */; };
 		E37B7F064085A14FAD5D7781 /* Pods_Rappi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC57AF7436AFF1547E3FD2B5 /* Pods_Rappi.framework */; };
 /* End PBXBuildFile section */
 
@@ -88,9 +99,14 @@
 		D85A33A31D2C09F9007D9CC8 /* RappiViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RappiViewController.swift; sourceTree = "<group>"; };
 		D85A33A91D2C0EF0007D9CC8 /* ViewController+Device.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+Device.swift"; sourceTree = "<group>"; };
 		D85A33AB1D2C1700007D9CC8 /* UIView+Style.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Style.swift"; sourceTree = "<group>"; };
-		D85A33B71D2C1A44007D9CC8 /* RestManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestManager.swift; sourceTree = "<group>"; };
 		D85A33B91D2C1C9D007D9CC8 /* Application+RestManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Application+RestManager.swift"; sourceTree = "<group>"; };
 		D85A33BB1D2C1E88007D9CC8 /* AppDelegate+CoreData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AppDelegate+CoreData.swift"; sourceTree = "<group>"; };
+		D89D4D921D34181600C1DE28 /* RestEntry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestEntry.swift; sourceTree = "<group>"; };
+		D89D4D9A1D3427CA00C1DE28 /* RappiDB.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RappiDB.xcdatamodel; sourceTree = "<group>"; };
+		D89D4DB41D342B5A00C1DE28 /* Entry+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Entry+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		D89D4DB51D342B5A00C1DE28 /* Entry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
+		D89D4DB61D342B5A00C1DE28 /* Category+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Category+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		D89D4DB71D342B5A00C1DE28 /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		D8B622821D2D5C2700302BAC /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		D8B622881D2D5E8400302BAC /* AppConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
 		D8B6228B1D2D5ECB00302BAC /* BaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
@@ -103,6 +119,12 @@
 		D8B622A01D2D7EF800302BAC /* SplashView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		D8BBBA5D1D2C65DA00D88D13 /* AppConfig.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = AppConfig.json; sourceTree = "<group>"; };
 		D8BBBA671D2C810100D88D13 /* RappiConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RappiConfig.swift; sourceTree = "<group>"; };
+		D8D2E8801D339B3000C07D45 /* RappiPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RappiPresenter.swift; sourceTree = "<group>"; };
+		D8D2E8841D339F0000C07D45 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		D8D2E8881D33BAB900C07D45 /* RestManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestManager.swift; sourceTree = "<group>"; };
+		D8D2E88A1D33BACA00C07D45 /* RappiManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RappiManager.swift; sourceTree = "<group>"; };
+		D8D2E8901D33C45000C07D45 /* RappiServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RappiServices.swift; sourceTree = "<group>"; };
+		D8D2E8961D33CD3800C07D45 /* RappiUseCases.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RappiUseCases.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,13 +228,14 @@
 			isa = PBXGroup;
 			children = (
 				D8BBBA621D2C7F9F00D88D13 /* Core */,
+				D85A339A1D2C02A3007D9CC8 /* DataAccess */,
+				D8D2E8921D33CC5E00C07D45 /* Business */,
+				D8D2E87E1D339AF700C07D45 /* Presenter */,
 				D8B622941D2D71B100302BAC /* Styles */,
 				D8B622851D2D5DE700302BAC /* View */,
 				D85A339F1D2C03A2007D9CC8 /* Utils */,
 				D85A339E1D2C037C007D9CC8 /* Application */,
 				D85A339D1D2C0315007D9CC8 /* Controller */,
-				D85A339B1D2C02CD007D9CC8 /* Business */,
-				D85A339A1D2C02A3007D9CC8 /* DataAccess */,
 				D85A33981D2C0084007D9CC8 /* Resources */,
 				D85A33711D2BD7E8007D9CC8 /* Assets.xcassets */,
 				D85A33731D2BD7E8007D9CC8 /* LaunchScreen.storyboard */,
@@ -242,6 +265,7 @@
 		D85A33981D2C0084007D9CC8 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				D89D4D981D34277A00C1DE28 /* DataBase */,
 				D81ACA8F1D2EBED50059C841 /* Language */,
 				D8BBBA5F1D2C65E100D88D13 /* Config */,
 			);
@@ -254,16 +278,6 @@
 				D85A33B11D2C1968007D9CC8 /* Rest */,
 			);
 			path = DataAccess;
-			sourceTree = "<group>";
-		};
-		D85A339B1D2C02CD007D9CC8 /* Business */ = {
-			isa = PBXGroup;
-			children = (
-				D85A33AF1D2C18FE007D9CC8 /* Model */,
-				D85A33AE1D2C1881007D9CC8 /* Adapters */,
-				D85A33AD1D2C17DA007D9CC8 /* UseCases */,
-			);
-			path = Business;
 			sourceTree = "<group>";
 		};
 		D85A339D1D2C0315007D9CC8 /* Controller */ = {
@@ -314,57 +328,31 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		D85A33AD1D2C17DA007D9CC8 /* UseCases */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = UseCases;
-			sourceTree = "<group>";
-		};
-		D85A33AE1D2C1881007D9CC8 /* Adapters */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Adapters;
-			sourceTree = "<group>";
-		};
-		D85A33AF1D2C18FE007D9CC8 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		D85A33B11D2C1968007D9CC8 /* Rest */ = {
 			isa = PBXGroup;
 			children = (
+				D8D2E88F1D33C43600C07D45 /* Model */,
+				D8D2E88E1D33C42200C07D45 /* Services */,
 				D85A33B61D2C1A16007D9CC8 /* Manager */,
-				D85A33B51D2C19FC007D9CC8 /* Services */,
-				D85A33B41D2C19BA007D9CC8 /* Model */,
 			);
 			path = Rest;
-			sourceTree = "<group>";
-		};
-		D85A33B41D2C19BA007D9CC8 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		D85A33B51D2C19FC007D9CC8 /* Services */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Services;
 			sourceTree = "<group>";
 		};
 		D85A33B61D2C1A16007D9CC8 /* Manager */ = {
 			isa = PBXGroup;
 			children = (
-				D85A33B71D2C1A44007D9CC8 /* RestManager.swift */,
+				D8D2E88A1D33BACA00C07D45 /* RappiManager.swift */,
 			);
 			path = Manager;
+			sourceTree = "<group>";
+		};
+		D89D4D981D34277A00C1DE28 /* DataBase */ = {
+			isa = PBXGroup;
+			children = (
+				D89D4D991D3427CA00C1DE28 /* RappiDB.xcdatamodeld */,
+			);
+			name = DataBase;
+			path = Database;
 			sourceTree = "<group>";
 		};
 		D8B622811D2D5BF400302BAC /* Home */ = {
@@ -465,6 +453,8 @@
 		D8BBBA621D2C7F9F00D88D13 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				D8D2E8861D33BA3A00C07D45 /* Rest */,
+				D8D2E8831D339EE100C07D45 /* Controller */,
 				D812A3AD1D32F78900AF3246 /* Router */,
 				D812A3AA1D32F70E00AF3246 /* Interactor */,
 				D812A3A71D32F6D800AF3246 /* Presenter */,
@@ -473,6 +463,99 @@
 				D8B622871D2D5E5D00302BAC /* Config */,
 			);
 			path = Core;
+			sourceTree = "<group>";
+		};
+		D8D2E87E1D339AF700C07D45 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				D8D2E87F1D339B1800C07D45 /* Base */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		D8D2E87F1D339B1800C07D45 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				D8D2E8801D339B3000C07D45 /* RappiPresenter.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		D8D2E8831D339EE100C07D45 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D8D2E8841D339F0000C07D45 /* BaseViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D8D2E8861D33BA3A00C07D45 /* Rest */ = {
+			isa = PBXGroup;
+			children = (
+				D8D2E8871D33BA8300C07D45 /* Manager */,
+			);
+			path = Rest;
+			sourceTree = "<group>";
+		};
+		D8D2E8871D33BA8300C07D45 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				D8D2E8881D33BAB900C07D45 /* RestManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		D8D2E88E1D33C42200C07D45 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				D8D2E8901D33C45000C07D45 /* RappiServices.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		D8D2E88F1D33C43600C07D45 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D89D4D921D34181600C1DE28 /* RestEntry.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D8D2E8921D33CC5E00C07D45 /* Business */ = {
+			isa = PBXGroup;
+			children = (
+				D8D2E8951D33CCCB00C07D45 /* Model */,
+				D8D2E8941D33CCAE00C07D45 /* Adapters */,
+				D8D2E8931D33CC8C00C07D45 /* UseCases */,
+			);
+			name = Business;
+			path = Bussines;
+			sourceTree = "<group>";
+		};
+		D8D2E8931D33CC8C00C07D45 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				D8D2E8961D33CD3800C07D45 /* RappiUseCases.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		D8D2E8941D33CCAE00C07D45 /* Adapters */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Adapters;
+			sourceTree = "<group>";
+		};
+		D8D2E8951D33CCCB00C07D45 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D89D4DB41D342B5A00C1DE28 /* Entry+CoreDataProperties.swift */,
+				D89D4DB51D342B5A00C1DE28 /* Entry.swift */,
+				D89D4DB61D342B5A00C1DE28 /* Category+CoreDataProperties.swift */,
+				D89D4DB71D342B5A00C1DE28 /* Category.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -659,30 +742,41 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D89D4DB91D342B5A00C1DE28 /* Entry.swift in Sources */,
+				D89D4DB81D342B5A00C1DE28 /* Entry+CoreDataProperties.swift in Sources */,
 				D8B622831D2D5C2700302BAC /* HomeViewController.swift in Sources */,
 				D8B622891D2D5E8400302BAC /* AppConfig.swift in Sources */,
 				D8BBBA681D2C810100D88D13 /* RappiConfig.swift in Sources */,
+				D89D4D9B1D3427CA00C1DE28 /* RappiDB.xcdatamodeld in Sources */,
+				D8D2E8811D339B3000C07D45 /* RappiPresenter.swift in Sources */,
 				D85A33AA1D2C0EF0007D9CC8 /* ViewController+Device.swift in Sources */,
+				D8D2E8851D339F0000C07D45 /* BaseViewController.swift in Sources */,
 				D812A3AF1D32F79D00AF3246 /* Router.swift in Sources */,
 				D8B622931D2D70D600302BAC /* CollectionDataSource.swift in Sources */,
 				D85A33BA1D2C1C9D007D9CC8 /* Application+RestManager.swift in Sources */,
 				D85A33A11D2C03F4007D9CC8 /* AppDelegate.swift in Sources */,
-				D85A33B81D2C1A44007D9CC8 /* RestManager.swift in Sources */,
 				D812A3AC1D32F73A00AF3246 /* Interactor.swift in Sources */,
 				D85A33A41D2C09F9007D9CC8 /* RappiViewController.swift in Sources */,
+				D8D2E8911D33C45000C07D45 /* RappiServices.swift in Sources */,
 				D85A33AC1D2C1700007D9CC8 /* UIView+Style.swift in Sources */,
 				D8B622961D2D71DD00302BAC /* AppDimentions.swift in Sources */,
 				D8B6228E1D2D5FD100302BAC /* HomeView.swift in Sources */,
+				D89D4DBA1D342B5A00C1DE28 /* Category+CoreDataProperties.swift in Sources */,
 				D81ACAA31D300F2F0059C841 /* HomeRouter.swift in Sources */,
+				D8D2E88B1D33BACA00C07D45 /* RappiManager.swift in Sources */,
 				D8B622A11D2D7EF800302BAC /* SplashView.swift in Sources */,
+				D8D2E8891D33BAB900C07D45 /* RestManager.swift in Sources */,
 				D812A3A91D32F6F900AF3246 /* Presenter.swift in Sources */,
 				D81ACA9B1D2EC3420059C841 /* AppDelegate+Navigation.swift in Sources */,
 				D812A3A61D312F6D00AF3246 /* SplashViewController.swift in Sources */,
 				D8B622911D2D61AD00302BAC /* RappiView.swift in Sources */,
 				D8B622981D2D71F500302BAC /* AppStyles.swift in Sources */,
 				D8B6228C1D2D5ECB00302BAC /* BaseView.swift in Sources */,
+				D89D4D931D34181600C1DE28 /* RestEntry.swift in Sources */,
 				D8B6229B1D2D72F600302BAC /* Color+Hex.swift in Sources */,
 				D81ACAA11D300F200059C841 /* HomeInteractor.swift in Sources */,
+				D89D4DBB1D342B5A00C1DE28 /* Category.swift in Sources */,
+				D8D2E8971D33CD3800C07D45 /* RappiUseCases.swift in Sources */,
 				D85A33BC1D2C1E88007D9CC8 /* AppDelegate+CoreData.swift in Sources */,
 				D81ACA9F1D300F0C0059C841 /* HomePresenter.swift in Sources */,
 			);
@@ -948,6 +1042,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D89D4D991D3427CA00C1DE28 /* RappiDB.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D89D4D9A1D3427CA00C1DE28 /* RappiDB.xcdatamodel */,
+			);
+			currentVersion = D89D4D9A1D3427CA00C1DE28 /* RappiDB.xcdatamodel */;
+			path = RappiDB.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = D85A335F1D2BD7E8007D9CC8 /* Project object */;
 }

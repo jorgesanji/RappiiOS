@@ -8,13 +8,21 @@
 
 import Foundation
 
-class Presenter : NSObject{
+protocol PresenterInput: class
+{
+}
+
+protocol PresenterOutput: class
+{
+}
+
+class Presenter: NSObject{
     
-    weak var view: AnyObject!
-    var interactor: AnyObject!
+    var view : AnyObject!
+    var interactor :AnyObject!
     
     required override init(){
         super.init()
     }
-    
+
 }

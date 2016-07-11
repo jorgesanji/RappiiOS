@@ -9,7 +9,7 @@
 import Foundation
 import AFNetworking
 
-typealias TypeResponse = (result:AnyObject) -> Void
+typealias TypeResponse = (result:NSDictionary) -> Void
 typealias ErrorResponse = (error:NSError) -> Void
 
 enum RequestMethod {
@@ -76,7 +76,7 @@ class RestManager{
             self.manager?.POST(endpoint, parameters: parameters, progress: { (NSProgress) -> Void in
             
                 }, success: { (task:NSURLSessionDataTask, responseObject:AnyObject?) -> Void in
-                    success(result: responseObject!)
+                    success(result: responseObject as! NSDictionary)
                 }, failure: { (task:NSURLSessionDataTask?, error:NSError) -> Void in
                     failure(error: error)
             })
@@ -86,7 +86,7 @@ class RestManager{
             self.manager?.GET(endpoint, parameters: parameters, progress: { (NSProgress) -> Void in
                 
                 }, success: { (task:NSURLSessionDataTask, responseObject:AnyObject?) -> Void in
-                     success(result: responseObject!)
+                     success(result: responseObject as! NSDictionary)
                 }, failure: { (task:NSURLSessionDataTask?, error:NSError) -> Void in
                     failure(error: error)
             })
@@ -102,6 +102,9 @@ class RestManager{
             params = parameters as! NSDictionary
         }
         return params
-        
+    }
+    
+    static func getBaseUrl()-> String{
+        return ((RestManager.sharedInstance.manager?.baseURL)?.host)!
     }
 }

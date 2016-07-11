@@ -8,12 +8,12 @@
 
 import UIKit
 
-protocol HomeInteractorInput
+protocol HomeInteractorInput: class, InteractorInput
 {
     func fetchApplications()
 }
 
-protocol HomeInteractorOutput
+protocol HomeInteractorOutput: class, InteractorOutput
 {
     func applicationsFetched(response: NSArray)
 }
@@ -21,17 +21,24 @@ protocol HomeInteractorOutput
 class HomeInteractor: Interactor, HomeInteractorInput
 {
     
-    required init()
-    {
-        super.init()
-    }
-    
     // MARK: Business logic
     
     func fetchApplications()
     {
-        
-        (output as! HomeInteractorOutput).applicationsFetched([])
+        RappiUseCases.getApplications({ (result) -> Void in
+            
+            print("")
+            
+            self.getOutInteractor().applicationsFetched([])
+            
+            }) { (error) -> Void in
+                print("")
+        }
+    }
     
+    // MARK: Properties GETTER
+    
+    func getOutInteractor()->HomeInteractorOutput{
+        return output as! HomeInteractorOutput
     }
 }

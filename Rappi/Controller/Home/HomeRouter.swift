@@ -11,9 +11,5 @@ import Foundation
 
 class HomeRouter: Router{
 
-    required init(){
-        super.init()
-    }
-
     
 }
