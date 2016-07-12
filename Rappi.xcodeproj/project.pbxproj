@@ -32,6 +32,8 @@
 		D89D4DB91D342B5A00C1DE28 /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89D4DB51D342B5A00C1DE28 /* Entry.swift */; };
 		D89D4DBA1D342B5A00C1DE28 /* Category+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89D4DB61D342B5A00C1DE28 /* Category+CoreDataProperties.swift */; };
 		D89D4DBB1D342B5A00C1DE28 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89D4DB71D342B5A00C1DE28 /* Category.swift */; };
+		D8B1F50A1D346BD6004A9267 /* HomePresenter+Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B1F5091D346BD6004A9267 /* HomePresenter+Actions.swift */; };
+		D8B1F50C1D346C30004A9267 /* HomeInteractor+Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B1F50B1D346C30004A9267 /* HomeInteractor+Actions.swift */; };
 		D8B622831D2D5C2700302BAC /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B622821D2D5C2700302BAC /* HomeViewController.swift */; };
 		D8B622891D2D5E8400302BAC /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B622881D2D5E8400302BAC /* AppConfig.swift */; };
 		D8B6228C1D2D5ECB00302BAC /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B6228B1D2D5ECB00302BAC /* BaseView.swift */; };
@@ -107,6 +109,8 @@
 		D89D4DB51D342B5A00C1DE28 /* Entry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
 		D89D4DB61D342B5A00C1DE28 /* Category+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Category+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		D89D4DB71D342B5A00C1DE28 /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		D8B1F5091D346BD6004A9267 /* HomePresenter+Actions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HomePresenter+Actions.swift"; sourceTree = "<group>"; };
+		D8B1F50B1D346C30004A9267 /* HomeInteractor+Actions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HomeInteractor+Actions.swift"; sourceTree = "<group>"; };
 		D8B622821D2D5C2700302BAC /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		D8B622881D2D5E8400302BAC /* AppConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
 		D8B6228B1D2D5ECB00302BAC /* BaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
@@ -324,6 +328,8 @@
 			children = (
 				D85A33A91D2C0EF0007D9CC8 /* ViewController+Device.swift */,
 				D85A33AB1D2C1700007D9CC8 /* UIView+Style.swift */,
+				D8B1F5091D346BD6004A9267 /* HomePresenter+Actions.swift */,
+				D8B1F50B1D346C30004A9267 /* HomeInteractor+Actions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -743,6 +749,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D89D4DB91D342B5A00C1DE28 /* Entry.swift in Sources */,
+				D8B1F50C1D346C30004A9267 /* HomeInteractor+Actions.swift in Sources */,
 				D89D4DB81D342B5A00C1DE28 /* Entry+CoreDataProperties.swift in Sources */,
 				D8B622831D2D5C2700302BAC /* HomeViewController.swift in Sources */,
 				D8B622891D2D5E8400302BAC /* AppConfig.swift in Sources */,
@@ -759,6 +766,7 @@
 				D85A33A41D2C09F9007D9CC8 /* RappiViewController.swift in Sources */,
 				D8D2E8911D33C45000C07D45 /* RappiServices.swift in Sources */,
 				D85A33AC1D2C1700007D9CC8 /* UIView+Style.swift in Sources */,
+				D8B1F50A1D346BD6004A9267 /* HomePresenter+Actions.swift in Sources */,
 				D8B622961D2D71DD00302BAC /* AppDimentions.swift in Sources */,
 				D8B6228E1D2D5FD100302BAC /* HomeView.swift in Sources */,
 				D89D4DBA1D342B5A00C1DE28 /* Category+CoreDataProperties.swift in Sources */,

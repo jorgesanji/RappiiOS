@@ -20,7 +20,6 @@ protocol HomeInteractorOutput: class, InteractorOutput
 
 class HomeInteractor: Interactor, HomeInteractorInput
 {
-    
     // MARK: Business logic
     
     func fetchApplications()
@@ -29,16 +28,11 @@ class HomeInteractor: Interactor, HomeInteractorInput
             
             print("")
             
-            self.getOutInteractor().applicationsFetched([])
+            self.getInteractor().applicationsFetched([])
             
             }) { (error) -> Void in
                 print("")
         }
     }
-    
-    // MARK: Properties GETTER
-    
-    func getOutInteractor()->HomeInteractorOutput{
-        return output as! HomeInteractorOutput
-    }
+
 }

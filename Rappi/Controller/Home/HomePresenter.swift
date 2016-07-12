@@ -32,14 +32,4 @@ class HomePresenter: Presenter, HomeViewControllerOutput, HomeInteractorOutput
     func fetchApplications() {
         getInteractor().fetchApplications()
     }
-    
-    // MARK: Properties GETTER
-    
-    func getView() -> HomeViewControllerInput{
-        return self.view as! HomeViewControllerInput
-    }
-    
-    func getInteractor() -> HomeInteractorInput{
-        return self.interactor as! HomeInteractorInput
-    }
 }
