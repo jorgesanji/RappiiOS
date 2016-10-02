@@ -23,18 +23,21 @@ class HomeViewController: RappiViewController<HomeView, HomePresenter, HomeInter
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        rootView.showIndicator = true
+        //        rootView.showIndicator = true
         self.title = NSLocalizedString("app_categories", comment: "")
         
-        presenter.fetchApplications()
+        getPresenter().fetchApplications()
+        rootView.onClickButton = {
+            self.getRouter().goToTestViewController()
+        }
     }
     
     // MARK: HomeViewControllerInput
     
     func displayApplicationList(aplications: NSArray) {
         rootView.showIndicator = false
-
     }
+    
     
 }
 

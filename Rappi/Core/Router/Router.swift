@@ -7,12 +7,13 @@
 //
 
 import Foundation
+import UIKit
 
 class Router : NSObject{
     
     // MARK: Instance Variables
     
-    weak var viewController: AnyObject!
+    weak var viewController: BaseViewController!
     
     required override init(){
         super.init()

@@ -34,6 +34,10 @@
 		D89D4DBB1D342B5A00C1DE28 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89D4DB71D342B5A00C1DE28 /* Category.swift */; };
 		D8B1F50A1D346BD6004A9267 /* HomePresenter+Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B1F5091D346BD6004A9267 /* HomePresenter+Actions.swift */; };
 		D8B1F50C1D346C30004A9267 /* HomeInteractor+Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B1F50B1D346C30004A9267 /* HomeInteractor+Actions.swift */; };
+		D8B1F50E1D383970004A9267 /* UIView + FromNib.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B1F50D1D383970004A9267 /* UIView + FromNib.swift */; };
+		D8B1F5111D383E77004A9267 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B1F5101D383E77004A9267 /* TestView.swift */; };
+		D8B1F5141D383FC1004A9267 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B1F5131D383FC1004A9267 /* TestViewController.swift */; };
+		D8B1F5161D384160004A9267 /* TestView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8B1F5151D384160004A9267 /* TestView.xib */; };
 		D8B622831D2D5C2700302BAC /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B622821D2D5C2700302BAC /* HomeViewController.swift */; };
 		D8B622891D2D5E8400302BAC /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B622881D2D5E8400302BAC /* AppConfig.swift */; };
 		D8B6228C1D2D5ECB00302BAC /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B6228B1D2D5ECB00302BAC /* BaseView.swift */; };
@@ -111,6 +115,10 @@
 		D89D4DB71D342B5A00C1DE28 /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		D8B1F5091D346BD6004A9267 /* HomePresenter+Actions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HomePresenter+Actions.swift"; sourceTree = "<group>"; };
 		D8B1F50B1D346C30004A9267 /* HomeInteractor+Actions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HomeInteractor+Actions.swift"; sourceTree = "<group>"; };
+		D8B1F50D1D383970004A9267 /* UIView + FromNib.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView + FromNib.swift"; sourceTree = "<group>"; };
+		D8B1F5101D383E77004A9267 /* TestView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
+		D8B1F5131D383FC1004A9267 /* TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		D8B1F5151D384160004A9267 /* TestView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestView.xib; sourceTree = "<group>"; };
 		D8B622821D2D5C2700302BAC /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		D8B622881D2D5E8400302BAC /* AppConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
 		D8B6228B1D2D5ECB00302BAC /* BaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
@@ -287,6 +295,7 @@
 		D85A339D1D2C0315007D9CC8 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				D8B1F5121D383E7D004A9267 /* Test */,
 				D8B6229C1D2D7C9800302BAC /* Splash */,
 				D8B622811D2D5BF400302BAC /* Home */,
 				D85A33A21D2C09D4007D9CC8 /* Base */,
@@ -361,6 +370,23 @@
 			path = Database;
 			sourceTree = "<group>";
 		};
+		D8B1F50F1D383E0C004A9267 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				D8B1F5101D383E77004A9267 /* TestView.swift */,
+				D8B1F5151D384160004A9267 /* TestView.xib */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
+		D8B1F5121D383E7D004A9267 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				D8B1F5131D383FC1004A9267 /* TestViewController.swift */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
 		D8B622811D2D5BF400302BAC /* Home */ = {
 			isa = PBXGroup;
 			children = (
@@ -375,6 +401,7 @@
 		D8B622851D2D5DE700302BAC /* View */ = {
 			isa = PBXGroup;
 			children = (
+				D8B1F50F1D383E0C004A9267 /* Test */,
 				D8B6228F1D2D618500302BAC /* Base */,
 				D8B6229F1D2D7EDD00302BAC /* Splash */,
 				D8B622861D2D5E1A00302BAC /* Home */,
@@ -427,6 +454,7 @@
 			isa = PBXGroup;
 			children = (
 				D8B6229A1D2D72F600302BAC /* Color+Hex.swift */,
+				D8B1F50D1D383970004A9267 /* UIView + FromNib.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -675,6 +703,7 @@
 				D85A33751D2BD7E8007D9CC8 /* LaunchScreen.storyboard in Resources */,
 				D81ACA961D2EBF3F0059C841 /* Localizable.strings in Resources */,
 				D8BBBA5E1D2C65DA00D88D13 /* AppConfig.json in Resources */,
+				D8B1F5161D384160004A9267 /* TestView.xib in Resources */,
 				D85A33721D2BD7E8007D9CC8 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -774,7 +803,9 @@
 				D8D2E88B1D33BACA00C07D45 /* RappiManager.swift in Sources */,
 				D8B622A11D2D7EF800302BAC /* SplashView.swift in Sources */,
 				D8D2E8891D33BAB900C07D45 /* RestManager.swift in Sources */,
+				D8B1F50E1D383970004A9267 /* UIView + FromNib.swift in Sources */,
 				D812A3A91D32F6F900AF3246 /* Presenter.swift in Sources */,
+				D8B1F5141D383FC1004A9267 /* TestViewController.swift in Sources */,
 				D81ACA9B1D2EC3420059C841 /* AppDelegate+Navigation.swift in Sources */,
 				D812A3A61D312F6D00AF3246 /* SplashViewController.swift in Sources */,
 				D8B622911D2D61AD00302BAC /* RappiView.swift in Sources */,
@@ -785,6 +816,7 @@
 				D81ACAA11D300F200059C841 /* HomeInteractor.swift in Sources */,
 				D89D4DBB1D342B5A00C1DE28 /* Category.swift in Sources */,
 				D8D2E8971D33CD3800C07D45 /* RappiUseCases.swift in Sources */,
+				D8B1F5111D383E77004A9267 /* TestView.swift in Sources */,
 				D85A33BC1D2C1E88007D9CC8 /* AppDelegate+CoreData.swift in Sources */,
 				D81ACA9F1D300F0C0059C841 /* HomePresenter.swift in Sources */,
 			);

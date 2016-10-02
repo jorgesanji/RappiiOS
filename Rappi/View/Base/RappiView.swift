@@ -40,6 +40,7 @@ class RappiView: BaseView {
         createSubViews()
         addSubviews()
         addStyles()
+        addActions()
     }
     
     func createSubViews(){
@@ -54,6 +55,10 @@ class RappiView: BaseView {
         preconditionFailure("This method must be overridden")
     }
     
+    func addActions(){
+        preconditionFailure("This method must be overridden")
+    }
+
     
     private func addIndicator(){
         if let indicatorView = self.viewWithTag(RappiView.KTagViewIndicator){

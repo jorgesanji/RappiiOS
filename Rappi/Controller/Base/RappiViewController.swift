@@ -8,10 +8,10 @@
 
 import UIKit
 
-class RappiViewController <V : BaseView, P: Presenter, I : Interactor, R : Router>: UIViewController {
+class RappiViewController <V : BaseView, P: Presenter, I : Interactor, R : Router>: BaseViewController {
 
-    var presenter: P!
-    var router: R!
+    private var presenter: P!
+    private var router: R!
 
     // MARK:- UIViewController init
     
@@ -64,7 +64,7 @@ class RappiViewController <V : BaseView, P: Presenter, I : Interactor, R : Route
         return false
     }
     
-    // MARK:- Build VIPER
+    // MARK:- Private methods
 
     private func configure()
     {
@@ -79,4 +79,15 @@ class RappiViewController <V : BaseView, P: Presenter, I : Interactor, R : Route
         
         interactor.output = presenter
     }
+    
+    // MARK:- Private methods
+    
+    internal func getRouter() -> R {
+        return router
+    }
+    
+    internal func getPresenter() -> P {
+        return presenter
+    }
+
 }

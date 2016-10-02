@@ -47,6 +47,12 @@ class SplashView : RappiView {
         title.font = UIFont.systemFontOfSize(AppDimentions.SIZE_FONT_TITLE_NAME_APP)
     }
     
+    override func addActions() {
+        
+    }
+    
+    // Mark: setup constraints
+    
     override func setupConstraints(){
         title.autoCenterInSuperview()
     }

@@ -7,9 +7,12 @@
 //
 
 import Foundation
-
+import UIKit
 
 class HomeRouter: Router{
-
     
+    func goToTestViewController(){
+        let test = TestViewController()
+        viewController.navigationController?.pushViewController(test, animated: true)
+    }
 }

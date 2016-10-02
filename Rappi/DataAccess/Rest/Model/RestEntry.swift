@@ -165,13 +165,13 @@ class RestEntry {
         }
     }
     
-    class Artist {
+    class Artist{
         
         //        @SerializedName("label")
         var label:String!
         
         //        @SerializedName("attributes")
-        var attributes: Attributes ;
+        var attributes: Attributes!
         
         class Attributes {
             
@@ -179,6 +179,10 @@ class RestEntry {
             var href:String!
             
         }
+        
+      
+        
+        
     }
     
     class Category {
